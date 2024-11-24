@@ -15,7 +15,7 @@ Version 1.1p, enables Philips to test pure HTTP page load times via the SWG Data
 Important Notes:
 
     If the checkbox for the HTTP page load test is enabled, Cisco Secure Client (CSC) must be turned off. Otherwise, the connection will be intercepted by CSC, invalidating the results.
-    Once CSC is disabled, the connection will only be accepted by the SWG proxy if the user is behind a trusted public network. Ensure the network environment is compliant before running the test..
+    Once CSC is disabled, the connection will only be accepted by the SWG proxy if the user is behind a trusted public network. Ensure the network environment is compliant before running the test.
 
 Test #2:
 
