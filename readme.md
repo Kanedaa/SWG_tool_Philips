@@ -10,6 +10,13 @@ Test #1:
 The first test involves performing a ping check on a list of IP addresses available at: https://geofeed.network.strln.net. 
 The process involves examining all subnets associated with each SWG Data Center (DC) to identify which IPs respond to the ping request.
 
+Version 1.1p, enables Philips to test pure HTTP page load times via the SWG Data Center (DC) with the shortest latency when using the ISP available at the time of testing.
+
+Important Notes:
+
+    If the checkbox for the HTTP page load test is enabled, Cisco Secure Client (CSC) must be turned off. Otherwise, the connection will be intercepted by CSC, invalidating the results.
+    Once CSC is disabled, the connection will only be accepted by the SWG proxy if the user is behind a trusted public network. Ensure the network environment is compliant before running the test..
+
 Test #2:
 
 The second test resolves the domain swg-url-proxy-https.sigproxy.qq.opendns.com using OpenDNS resolvers, 
@@ -17,6 +24,7 @@ and the initial result is printed immediately upon launching the tool. The secon
 
 Customers may reconfigure the host's DNS server and repeat the test. Depending on the DNS server's location, 
 it should theoretically indicate the nearest SWG to that server.
+
 
 Test #3
 
@@ -30,10 +38,6 @@ Please note that the application requires access to the following directories:
 Additionally, it is necessary to have permission to manage services, as this is essential for starting and stopping the csc_vpnagent process.
 
 It is important to mention that this test is not flawless; other IPs dedicated to SWG range may also be listening on port 80. Moreover, due to CAPTCHA restrictions on the page at https://cachecheck.opendns.com/, automation of this test is currently not feasible.
-
-In the future, if time permits, I may attempt to enhance the reliability of this third test.
-
-
 
 --------------------------------------------------------------------------------------------
 
