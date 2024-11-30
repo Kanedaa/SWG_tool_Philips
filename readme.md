@@ -46,8 +46,6 @@ Please note that the application requires access to the following directories:
 
 Additionally, it is necessary to have permission to manage services, as this is essential for starting and stopping the csc_vpnagent process.
 
-It is important to mention that this test is not flawless; other IPs dedicated to SWG range may also be listening on port 80. Moreover, due to CAPTCHA restrictions on the page at https://cachecheck.opendns.com/, automation of this test is currently not feasible.
-
 --------------------------------------------------------------------------------------------
 
 If you would like to share feedback, please feel free to reach out via email or LinkedIn.
