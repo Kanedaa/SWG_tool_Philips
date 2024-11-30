@@ -1,5 +1,6 @@
-This tool is not an official Cisco supported tool.
+This tool is not an officially supported Cisco product. It has been developed specifically to assist Philips in troubleshooting ISP and DNS-related issues.
 
+About:
 This is a straightforward Python 3 script that has been converted into an executable (.exe) application for Windows10/11 hosts.
 
 Administrative privileges are necessary for its operation. As this code is not digitally signed or endorsed by Microsoft, 
@@ -16,8 +17,14 @@ Version 1.1p, enables Philips to test pure HTTP page load times via the SWG Data
 
 Important Notes:
 
-    If the checkbox for the HTTP page load test is enabled, Cisco Secure Client (CSC) must be turned off. Otherwise, the connection will be intercepted by CSC, invalidating the results.
-    Once CSC is disabled, the connection will only be accepted by the SWG proxy if the user is behind a trusted public network. Ensure the network environment is compliant before running the test.
+*If Cisco Secure Client is OFF:
+The Page Load test will execute via the fastest SWG DC (determined by latency).
+
+*If Cisco Secure Client is ON:
+The Page Load test will execute via the current SWG DC in use.
+
+*If the third test is running:
+The Page Load test will execute via the SWG DC of your choice.
 
 Test #2:
 
