@@ -12,7 +12,7 @@ Test #1:
 
 The first test involves performing a ping check on a list of IP addresses available at: https://geofeed.network.strln.net. 
 The process involves examining all subnets associated with each SWG Data Center (DC) to identify which IPs respond to the ping request.
-Version 1.1p, enables Philips to test pure HTTP page load times via the SWG Data Center (DC) with the shortest latency when using the ISP available at the time of testing.
+Version 1.2p, enables Philips to test pure HTTP page load times via the SWG Data Center (DC) with the shortest latency when using the ISP available at the time of testing.
 
 Important Notes:
 
